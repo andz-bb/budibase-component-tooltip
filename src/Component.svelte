@@ -33,7 +33,7 @@
           <use xlink:href="#spectrum-icon-18-{icon}" />
         </svg>
       {/if}
-      <span class="spectrum-Tooltip-label">{label}</span>
+      <span class="spectrum-Tooltip-label">{label || ""}</span>
       <span class="spectrum-Tooltip-tip" />
     </div>
   </span>

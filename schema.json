@@ -3,7 +3,7 @@
   "metadata": {},
   "schema": {
     "name": "tooltip",
-    "friendlyName": "tooltip",
+    "friendlyName": "Tooltip",
     "description": "A Budibase tooltip component ",
     "icon": "Answer",
     "hasChildren": true,
@@ -11,7 +11,8 @@
       {
         "type": "text",
         "key": "label",
-        "label": "Label"
+        "label": "Label",
+        "defaultValue": ""
       },
       {
         "type": "select",
