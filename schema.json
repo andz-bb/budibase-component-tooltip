@@ -1,0 +1,80 @@
+{
+  "type": "component",
+  "metadata": {},
+  "schema": {
+    "name": "tooltip",
+    "friendlyName": "tooltip",
+    "description": "A Budibase tooltip component ",
+    "icon": "Answer",
+    "hasChildren": true,
+    "settings": [
+      {
+        "type": "text",
+        "key": "label",
+        "label": "Label"
+      },
+      {
+        "type": "select",
+        "showInBar": true,
+        "label": "Position",
+        "defaultValue": "bottom",
+        "key": "position",
+        "options": [
+          {
+            "label": "Top",
+            "value": "top"
+          },
+          {
+            "label": "Bottom",
+            "value": "bottom"
+          },
+          {
+            "label": "Left",
+            "value": "left"
+          },
+          {
+            "label": "Right",
+            "value": "right"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "showInBar": true,
+        "label": "Variant",
+        "defaultValue": "neutral",
+        "key": "variant",
+        "options": [
+          {
+            "label": "Neutral",
+            "value": "neutral"
+          },
+          {
+            "label": "Informative",
+            "value": "info"
+          },
+          {
+            "label": "Positive",
+            "value": "positive"
+          },
+          {
+            "label": "Negative",
+            "value": "negative"
+          }
+        ]
+      },
+      {
+        "type": "boolean",
+        "showInBar": true,
+        "label": "Show icon",
+        "defaultValue": false,
+        "key": "showIcon",
+        "dependsOn": {
+          "setting": "variant",
+          "value": "neutral",
+          "invert": true
+        }
+      }
+    ]
+  }
+}
