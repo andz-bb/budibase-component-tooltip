@@ -43,5 +43,6 @@
   .spectrum-Tooltip {
     width: max-content;
     white-space: normal;
+    z-index: 9999;
   }
 </style>
