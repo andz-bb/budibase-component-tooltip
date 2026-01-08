@@ -1,7 +1,10 @@
 {
   "name": "tooltip",
-  "version": "1.5.3",
-  "description": "A Budibase tooltip component ",
+  "version": "1.5.4",
+  "author": "Andrew Thompson (https://github.com/andz-bb)",
+  "repository": "github:andz-bb/budibase-component-tooltip",
+  "homepage": "https://github.com/andz-bb/budibase-component-tooltip",
+  "description": "A Budibase tooltip component",
   "license": "MIT",
   "svelte": "index.js",
   "module": "dist/plugin.min.js",
