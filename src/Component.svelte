@@ -10,9 +10,9 @@
   const component = getContext("component");
 
   const iconMap = {
-    info: "Info",
-    positive: "CheckmarkCircle",
-    negative: "Alert",
+    info: "info",
+    positive: "check-circle",
+    negative: "warning",
   };
 
   $: icon = iconMap[variant];
@@ -24,14 +24,9 @@
     <div
       class="spectrum-Tooltip spectrum-Tooltip--{variant} spectrum-Tooltip--{position}"
     >
-      {#if showIcon}
-        <svg
-          class="spectrum-Icon spectrum-Icon--sizeM spectrum-Tooltip-typeIcon"
-          focusable="false"
-          aria-hidden="true"
-        >
-          <use xlink:href="#spectrum-icon-18-{icon}" />
-        </svg>
+      {#if showIcon && icon}
+        <i class="spectrum-Tooltip-typeIcon ph ph-{icon}" aria-hidden="true"
+        ></i>
       {/if}
       <span class="spectrum-Tooltip-label">{label || ""}</span>
       <span class="spectrum-Tooltip-tip" />
@@ -44,5 +39,17 @@
     width: max-content;
     white-space: normal;
     z-index: 9999;
+  }
+
+  .spectrum-Tooltip-typeIcon.ph {
+    align-items: center;
+    align-self: center;
+    color: currentColor;
+    display: inline-flex;
+    font-size: 1.33em;
+    height: 1.33em;
+    justify-content: center;
+    line-height: 1;
+    width: 1.33em;
   }
 </style>
