@@ -1,6 +1,6 @@
 # Tooltip
 
-### [2026 update] Requires Budibase 3.23.48 or higher to run - [read more here](https://github.com/Budibase/budibase/discussions/17316)
+### [2026 update] Requires Budibase 3.24 or higher to run - [read more here](https://github.com/Budibase/budibase/discussions/17316)
 
 ![budibase tooltip demo](https://user-images.githubusercontent.com/110921612/206429195-1d61c4ad-f797-47f4-be70-dceccce2be1c.gif)
 
